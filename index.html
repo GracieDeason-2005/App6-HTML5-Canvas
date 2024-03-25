@@ -58,12 +58,11 @@ function drawRect() {
 function writeName() {
 
 }
-
-function loadBernedoodle() {
 	<img id = "Bernedoodle"
 	src= "https://images.app.goo.gl/zmAW9YoQCEzgSrSt6" alt="puppy" width="177" height="113"> //This is the image address that the app will display. The alt is the alternative name of the image.
 	<canvas id="a" width="177" height="113"></canvas>
-	window.onload = function() {
+
+window.onload = function() {
   	var canvas = document.getElementById("a");
  	var context = canvas.getContext("2d");
   	var Bernedoodle = document.getElementById("Bernedoodle");
@@ -115,7 +114,7 @@ function eraseDrawings() {
 	</div>
 
 	<div>
-	<a onclick="loadBernedoodle();" class="w3-btn w3-blue w3-round"> Draw Bernedoodle</a> <!-- This button uploads an image of a bernedoodle puppy-->
+	<a onclick="window.onload();" class="w3-btn w3-blue w3-round"> Draw Bernedoodle</a> <!-- This button uploads an image of a bernedoodle puppy-->
 	</div>
 
 	<div>
