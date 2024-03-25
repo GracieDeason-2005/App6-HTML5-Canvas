@@ -38,11 +38,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-function drawRect() {
-	var a_canvas = document.getElementById('a'); // Function identifies canvas 'a' as target
-	var a_context = a_canvas.getContext('2d'): // Makes 'a' canvas 2d
-	a_context.fillStyle = "#FF8C00"//Make rectangle burnt orange
-	a_context.fillRect(5, 5, 150, 100); //This fills in a smaller rectangle than the border in canvas
+function drawRect() { // function that draws a rectangle
+   var a_canvas = document.getElementById('a'); // attaining the canvas with id "a"
+   var a_context = a_canvas.getContext('2d'); // telling the program I want the a_canvas to be 2D
+   a_context.fillStyle = "#FF8C00"; // making the rectangle a burnt-orange color
+   a_context.fillRect(5, 5, 150, 100); // creating the filled-in rectangle in the canvas with top left corner positioned at (5,5)
 };
 
 function draw_name() {
